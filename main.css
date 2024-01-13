@@ -41,6 +41,7 @@ body {
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     gap: 35px;
 }
+
 .con .box {
     padding: 30px;
     border-radius: 15px;
@@ -144,4 +145,24 @@ body {
 .con .three .para .feedback , .con .four .para .feedback {
   color: var(--Very-dark-grayish-blue);
   opacity: 70%;
+}
+@media (max-width:375px) {
+  .con {
+    grid-template-columns: 1fr;
+} 
+.con .one {
+  background-color: var(--Moderate-violet);
+  grid-column:  span 1;
+}
+.con .three {
+  grid-row: span 1;
+  order: 5;
+}
+.con .five {
+  grid-column: span 1;
+}
+.con .one .heading img:last-child {
+
+  right: 12px;
+}
 }
